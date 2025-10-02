@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>SEBI 裁定摘要与索赔申请</title>
+  <style>
+    body {
+      font-family: "Microsoft YaHei", sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 80%;
+      max-width: 950px;
+      margin: 30px auto;
+    }
+    .section {
+      background: #fff;
+      padding: 25px 30px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 12px;
+      border-left: 4px solid #4A90E2;
+      padding-left: 10px;
+    }
+    .section p, .section li {
+      line-height: 1.7;
+      font-size: 15px;
+      color: #444;
+      margin: 8px 0;
+      text-align: left;
+    }
+    ul { padding-left: 20px; }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      font-size: 16px;
+      color: #fff;
+      background: #4A90E2;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .btn:hover { background: #357ABD; }
+
+    /* 弹窗 */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      width: 460px;
+      max-width: 90%;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.3);
+    }
+    .modal-content h3 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .success-message {
+      display: none;
+      margin-top: 15px;
+      padding: 12px;
+      background: #e6f7e6;
+      border: 1px solid #8fd48f;
+      border-radius: 5px;
+      color: #2a7c2a;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="section">
+      <h2>一、案件背景</h2>
+      <p>2020年至2023年间，多家印度投资公司通过伪造的加密货币投资计划，吸收公众资金并承诺高额回报。SEBI（印度证券交易委员会）接到投诉后，展开了全面调查，发现相关公司存在严重的资金挪用、虚假宣传以及未经注册的投资活动。</p>
+    </div>
+
+    <div class="section">
+      <h2>二、资金操作模式</h2>
+      <ul>
+        <li>通过线上宣传与社交媒体，鼓励投资者购买虚拟货币产品。</li>
+        <li>承诺年化回报率高达 24% 至 48%。</li>
+        <li>部分资金被转移至境外账户，未用于真实投资。</li>
+        <li>设立多层壳公司，掩盖资金流向。</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>三、关键人物</h2>
+      <p>主要责任人包括公司董事及若干高级职员。他们共同策划并推动虚假投资项目，直接参与资金募集和挪用。部分人员已被禁止在证券市场活动。</p>
+    </div>
+
+    <div class="section">
+      <h2>四、违规事实</h2>
+      <ul>
+        <li>未经注册非法集资。</li>
+        <li>误导投资者，未披露实际风险。</li>
+        <li>资金转移及洗钱嫌疑。</li>
+        <li>违反《SEBI 法案》及相关证券法规。</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>五、SEBI 审计发现</h2>
+      <p>经审计，相关公司累计募集资金约 4.6 亿印度卢比，其中超过 60% 未能查明去向。部分投资人未收到任何回报，存在重大损失风险。</p>
+    </div>
+
+    <div class="section">
+      <h2>六、处罚决定</h2>
+      <ul>
+        <li>冻结涉案公司及责任人所有证券账户。</li>
+        <li>禁止涉案人员 5 年内进入资本市场。</li>
+        <li>责令全额退还投资者资金，并支付年化 12% 的利息。</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>七、投资人损失情况</h2>
+      <p>根据 SEBI 提交的受害者清单，共涉及投资人 1200 余名，损失金额合计超过 30 亿印度卢比。多数投资人系通过银行转账及电子支付方式入金。</p>
+    </div>
+
+    <div class="section">
+      <h2>八、附注</h2>
+      <p>本裁定为 SEBI 的初步措施，相关案件仍在进一步司法程序中。投资人可依据该裁定文件，向 SEBI 提出索赔申请。</p>
+    </div>
+
+    <!-- 索赔申请按钮 -->
+    <div class="section" style="text-align:center;">
+      <button class="btn" onclick="openModal()">申请索赔</button>
+    </div>
+  </div>
+
+  <!-- 弹窗表单 -->
+  <div class="modal" id="claimModal">
+    <div class="modal-content">
+      <h3>索赔申请表</h3>
+      <form id="claimForm">
+        <div class="form-group">
+          <label for="name">申请人姓名</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">电子邮箱</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="category">选择索赔类别</label>
+          <select id="category" required>
+            <option value="">请选择</option>
+            <option value="资金未返还">资金未返还</option>
+            <option value="收益未兑现">收益未兑现</option>
+            <option value="账户被冻结">账户被冻结</option>
+            <option value="其他">其他</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="amount">索赔金额（INR）</label>
+          <input type="number" id="amount" required>
+        </div>
+        <div class="form-group">
+          <label for="reason">索赔原因</label>
+          <textarea id="reason" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="evidence">上传证据（可选）</label>
+          <input type="file" id="evidence">
+        </div>
+        <button type="submit" class="btn">提交申请</button>
+      </form>
+      <div class="success-message" id="successMsg">您的索赔申请已提交</div>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("claimModal");
+    function openModal() { modal.style.display = "flex"; }
+    window.onclick = function(e) {
+      if (e.target == modal) modal.style.display = "none";
+    }
+    document.getElementById("claimForm").onsubmit = function(e) {
+      e.preventDefault();
+      document.getElementById("successMsg").style.display = "block";
+    }
+  </script>
+</body>
+</html>
